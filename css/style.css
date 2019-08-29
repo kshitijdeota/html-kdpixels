@@ -1,0 +1,229 @@
+.body-frame {
+	position: fixed;
+	background: transparent;
+	border: solid 20px #FFF;
+	height: calc(100vh - 40px);
+	width: calc(100vw - 40px);
+	left: 0;
+	top: 0;
+	z-index: 10;
+}
+
+body {
+	position: relative;
+	font-family: 'Fira Sans',sans-serif;
+	font-size: 12px;
+	letter-spacing: .1px;
+	line-height: 1.5;
+	color: #999;
+}
+
+body:before {
+	background: white;
+	position: fixed;
+	content: " ";
+	height: 100vh;
+	width: 20px;
+	left: 0;
+	top: 0;
+}
+
+body:after {
+	background: white;
+	position: fixed;
+	content: " ";
+	height: 100vh;
+	width: 20px;
+	right: 0;
+	top: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Fira Sans", sans-serif;
+	font-weight: 300;
+	color: #676767;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+	transition: all .5s ease-in-out;
+}
+
+a:hover {
+	color: #AAA;
+	text-decoration: none;
+	transition: all .5s ease-in-out;
+}
+
+.page:before {
+	background: white;
+	position: fixed;
+	content: " ";
+	height: 20px;
+	width: 100vw;
+	bottom: 0;
+}
+
+.page:after {
+	background: white;
+	position: fixed;
+	content: " ";
+	height: 20px;
+	width: 100vw;
+	top: 0;
+}
+
+.container {
+	position: relative;
+	width: 1180px;
+	margin: 0 auto;
+}
+
+.kd-branding-wrapper {
+	background: #FFF;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 999;
+}
+
+.kd-branding {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 120px;
+}
+	.kd-logo {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 50px;
+		width: 37px;
+	}
+		.kd-logo-link {
+			display: inline-block;
+			height: 50px;
+			width: 37px;
+			margin-right: 20px;
+		}
+			.kd-logo-image {
+				height: auto;
+				height: 50px;
+				width: 37px;
+			}
+
+.kd-main-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+	.kd-main-nav-link {
+		margin: 15px;
+		letter-spacing: 1px;
+	}
+
+.kd-social-nav {}
+	.kd-social-nav-link {
+		vertical-align: middle;
+		display: inline-block;
+		opacity: .35;
+	}
+	.kd-social-nav-link:hover {
+		opacity: 1;
+	}
+		.kd-social-nav-image {
+			display: inline;
+			max-width: 24px;
+			max-height: 24px;
+			margin-left: 20px;
+		}
+
+.kd-footer {}
+.kd-footer-title {}
+
+.kd-footer-nav {}
+.kd-footer-nav-link {}
+
+.kd-colophon {}
+.kd-colophon-copyright {}
+
+.kd-colophon-social-nav {}
+.kd-colophon-social-nav-link {}
+
+.kd-form {}
+.kd-form-row {}
+.kd-form-label {}
+.kd-form-button {}
+
+.kd-payment-processors-image {}
+
+.kd-content {}
+
+
+.kd-hero-wrapper {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	background: #F8F8F8 url(../images/hero.jpg) no-repeat 0 25px;
+	background-size: cover;
+	height: 100vh;
+}
+	.kd-hero {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		text-align: left;
+		width: 1180px;
+		margin: 50px auto;
+		margin-top: 100px;
+	}
+		.kd-upsell {
+			background: #F8F8F8;
+			border: 5px solid #FFF;
+			padding: 10px 30px 30px 30px;
+			margin: 0 10px;
+			width: 33%;
+			box-shadow: 0 20px 30px 0 rgba(0,0,0,0.3);
+		}
+			.kd-upsell-title {
+				letter-spacing: 1px;
+			}
+				.kd-upsell-content {
+					padding: 0 0 10px 0;
+				}
+				.kd-upsell-link {
+					position: relative;
+					display: inline-block;
+					letter-spacing: 1px;
+				}
+				.kd-upsell-link:after {
+					position: relative;
+					display: inline-block;
+					background: url(../images/arrow.png) no-repeat;
+					content: " ";
+					width: 22px;
+					height: 5px;
+					margin: 5px;
+					vertical-align: text-bottom;
+				}
+
+	.kd-get-in-touch {
+		font-size: 28px;
+		color: #FFF;
+		text-align: center;
+	}
+
+.kd-portfolio {}
+.kd-portfolio-nav {}
+.kd-portfolio-nav-link {}
+
+.kd-portfolio-items {}
+.kd-portfolio-item {}
+.kd-portfolio-item-image {}
+.kd-right-arrow {}
