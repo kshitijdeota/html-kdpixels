@@ -1,3 +1,9 @@
+*,
+html,
+body {
+	box-sizing: border-box;
+}
+
 .body-frame {
 	position: fixed;
 	background: transparent;
@@ -26,6 +32,7 @@ body:before {
 	width: 20px;
 	left: 0;
 	top: 0;
+	z-index: 999;
 }
 
 body:after {
@@ -36,6 +43,7 @@ body:after {
 	width: 20px;
 	right: 0;
 	top: 0;
+	z-index: 999;
 }
 
 h1,
@@ -46,6 +54,8 @@ h5,
 h6 {
 	font-family: "Fira Sans", sans-serif;
 	font-weight: 300;
+	margin: 0;
+	padding: 0;
 	color: #676767;
 }
 
@@ -68,6 +78,7 @@ a:hover {
 	height: 20px;
 	width: 100vw;
 	bottom: 0;
+	z-index: 999;
 }
 
 .page:after {
@@ -77,6 +88,7 @@ a:hover {
 	height: 20px;
 	width: 100vw;
 	top: 0;
+	z-index: 999;
 }
 
 .container {
@@ -97,6 +109,7 @@ a:hover {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding: 0 10px;
 	height: 120px;
 }
 	.kd-logo {
@@ -110,7 +123,7 @@ a:hover {
 			display: inline-block;
 			height: 50px;
 			width: 37px;
-			margin-right: 20px;
+			margin-right: 10px;
 		}
 			.kd-logo-image {
 				height: auto;
@@ -144,17 +157,38 @@ a:hover {
 			margin-left: 20px;
 		}
 
-.kd-footer {}
-.kd-footer-title {}
+.kd-footer {
+	background: rgba(0, 0, 0, 0.05);
+}
+.kd-footer-column-wrapper {
+	display: flex;
+	justify-content: flex-start;
+	padding: 40px 10px;
+}
+	.kd-footer-column {
+		margin: 0 100px 0 0;
+	}
+		.kd-footer-title {
+			font-size: 1.1em;
+			letter-spacing: 2px;
+			margin-bottom: 20px;
+		}
+			.kd-footer-nav {}
+				.kd-footer-nav-link {
+					display: block;
+					padding: 3px 0;
+				}
 
-.kd-footer-nav {}
-.kd-footer-nav-link {}
-
-.kd-colophon {}
-.kd-colophon-copyright {}
-
-.kd-colophon-social-nav {}
-.kd-colophon-social-nav-link {}
+.kd-colophon-wrapper {
+	background: rgba(0, 0, 0, 0.1);
+	margin-bottom: 20px;
+}
+	.kd-colophon {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 10px 10px 5px 10px;
+	}
 
 .kd-form {}
 .kd-form-row {}
@@ -186,7 +220,7 @@ a:hover {
 		.kd-upsell {
 			background: #F8F8F8;
 			border: 5px solid #FFF;
-			padding: 10px 30px 30px 30px;
+			padding: 30px;
 			margin: 0 10px;
 			width: 33%;
 			box-shadow: 0 20px 30px 0 rgba(0,0,0,0.3);
@@ -194,36 +228,79 @@ a:hover {
 			.kd-upsell-title {
 				letter-spacing: 1px;
 			}
-				.kd-upsell-content {
-					padding: 0 0 10px 0;
-				}
 				.kd-upsell-link {
 					position: relative;
 					display: inline-block;
 					letter-spacing: 1px;
 				}
-				.kd-upsell-link:after {
-					position: relative;
-					display: inline-block;
-					background: url(../images/arrow.png) no-repeat;
-					content: " ";
-					width: 22px;
-					height: 5px;
-					margin: 5px;
-					vertical-align: text-bottom;
-				}
+					.kd-upsell-link:after {
+						position: relative;
+						display: inline-block;
+						background: url(../images/arrow.png) no-repeat;
+						content: " ";
+						width: 22px;
+						height: 5px;
+						margin: 5px;
+						vertical-align: text-bottom;
+						opacity: 1;
+						transition: all .5s ease-in-out;
+					}
+					.kd-upsell-link:hover:after {
+						opacity: .35;
+						transition: all .5s ease-in-out;
+					}
 
-	.kd-get-in-touch {
-		font-size: 28px;
-		color: #FFF;
-		text-align: center;
+.kd-portfolio-nav {
+	margin: 50px 0 0 0;
+	text-align: center;
+}
+	.kd-portfolio-nav-link {
+		display: inline-block;
+		padding: 20px 15px;
 	}
 
-.kd-portfolio {}
-.kd-portfolio-nav {}
-.kd-portfolio-nav-link {}
+.kd-portfolio {
+	padding: 0 0 100px 0;
+	margin: 0 0 30px 0;
+}
+	.kd-portfolio-section-title {
+		padding: 70px 35px 35px 70px;
+		font-size: 1.5em;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+		.kd-portfolio-items {
+			position: relative;
+			display: grid;
+			grid-column-gap: 20px;
+			grid-row-gap: 30px;
+			grid-template-columns: auto auto auto;
+			padding: 0 10px;
+		}
+			.kd-portfolio-item {
+				position: relative;
+				max-width: 370px;
+				box-shadow: 0 20px 30px 0 rgba(0,0,0,0.3);
+			}
+				.kd-portfolio-image {
+					display: block;
+					max-width: 370px;
+					border: 5px solid #FFF;
+				}
+				.kd-portfolio-link {
+					position: absolute;
+					display: block;
+					bottom: 25px;
+					left: 35px;
+					font-size: 16px;
+					text-transform: uppercase;
+					color: rgb(255, 255, 255, 0.85);
+				}
 
-.kd-portfolio-items {}
-.kd-portfolio-item {}
-.kd-portfolio-item-image {}
-.kd-right-arrow {}
+
+
+
+
+
+
+
