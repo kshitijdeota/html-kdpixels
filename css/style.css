@@ -18,8 +18,10 @@ body {
 body {
 	position: relative;
 	font-family: 'Fira Sans',sans-serif;
-	font-size: 12px;
+	font-size: 0.85em;
 	line-height: 1.5;
+	font-weight: 400;
+	letter-spacing: -0.25px;
 	color: #999;
 }
 
@@ -52,14 +54,15 @@ h4,
 h5,
 h6 {
 	font-family: "Fira Sans", sans-serif;
-	font-weight: 300;
+	font-weight: 400;
+	letter-spacing: .5px;
 	margin: 0;
 	padding: 0;
 	color: #676767;
 }
 
 a {
-	color: #333;
+	color: #666;
 	text-decoration: none;
 	transition: all .5s ease-in-out;
 }
@@ -71,6 +74,10 @@ a {
 
 p {
 	margin: 0 0 20px 0;
+}
+
+.page {
+	padding-top: 150px;
 }
 
 .page:before {
@@ -140,7 +147,7 @@ p {
 	.kd-main-nav-link {
 		padding: 7px 15px;
 		margin-right: 15px;
-		letter-spacing: 1px;
+		letter-spacing: .5px;
 	}
 		.kd-main-nav-link:hover {
 			background: rgba(0,0,0,0.025);
@@ -175,14 +182,18 @@ p {
 		}
 			.kd-footer-title {
 				font-size: 1.1em;
-				letter-spacing: 2px;
+				letter-spacing: .5px;
 				margin-bottom: 20px;
 			}
 				.kd-footer-nav {}
 					.kd-footer-nav-link {
+						color: #888;
 						display: block;
 						padding: 3px 0;
 					}
+						.kd-footer-nav-link:hover {
+							color: #000;
+						}
 
 .kd-colophon-wrapper {
 	background: rgba(0, 0, 0, 0.1);
@@ -201,9 +212,9 @@ p {
 	display: flex;
 	align-items: center;
 	text-align: center;
-	background: #F8F8F8 url(../images/hero.jpg) no-repeat 0 25px;
+	background: #F8F8F8 url(../images/hero.jpg) no-repeat 0 -25px;
 	background-size: cover;
-	height: 100vh;
+	height: calc(100vh - 150px);
 }
 	.kd-hero {
 		display: flex;
@@ -223,13 +234,11 @@ p {
 			box-shadow: 0 20px 30px 0 rgba(0,0,0,0.3);
 		}
 			.kd-upsell-title {
-				letter-spacing: 1px;
 				margin-bottom: 15px;
 			}
 				.kd-upsell-link {
 					position: relative;
 					display: inline-block;
-					letter-spacing: 1px;
 				}
 					.kd-upsell-link:after {
 						position: relative;
@@ -260,7 +269,7 @@ p {
 		display: inline-block;
 		padding: 7px 15px;
 		margin: 10px 15px;
-		letter-spacing: 1px;
+		letter-spacing: .5px;
 	}
 		.kd-portfolio-nav-link:hover {
 			background: rgba(0,0,0,0.025);
@@ -289,7 +298,7 @@ p {
 						padding: 0 0 20px 0;
 						font-size: 1.5em;
 						text-transform: uppercase;
-						letter-spacing: 2px;
+						letter-spacing: 1px;
 					}
 					.kd-portfolio-image {
 						display: block;
@@ -306,11 +315,85 @@ p {
 						color: rgb(255, 255, 255, 0.85);
 					}
 
-/****** PORTFOLIO CATAGORY ******/
+/****** PORTFOLIO CATEGORY ******/
 
 /****** PORTFOLIO SINGLE ******/
 
+
+/****** ABOUT ******/
+.kd-about {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+}
+	.kd-about-content {
+		padding: 0 0 0 100px;
+	}
+		.kd-about-title {
+			margin-bottom: 20px;
+		}
+			.kd-skills {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+			}
+	.kd-portrait {
+		display: grid
+	}
+		.kd-portrait-image {
+			border: 5px solid #F8F8F8;
+			margin: 50px 100px;
+			max-width: 100%;
+		}
+
+/****** POSTS ******/
+.kd-posts {
+	column-count: 3;
+	column-gap: 2.5em;
+	margin-bottom: 50px;
+	padding: 0 30px;
+}
+.kd-post {
+	display: inline-block;
+	border-radius: 4px;
+	margin-bottom: 35px;
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.15);
+}
+.kd-post-title {
+	background: #F8F8F8;
+	font-size: 1.4em;
+	line-height: 1.5;
+	letter-spacing: 0px;
+	padding: 20px 20px 10px 20px;
+}
+.kd-post-subtitle {
+	background: #F8F8F8;
+	color: #666666;
+	font-size: 1em;
+	padding: 0 20px 10px 20px;
+}
+.kd-post-content {
+	background: #F8F8F8;
+	padding: 0 20px 20px 20px;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+.kd-post-attachment {
+	border-radius: 7px;
+	padding: 20px 30px;
+}
+.kd-post-image {
+	max-width: 100%;
+	border-radius: 7px;
+}
+
 /****** UTILITIES ******/
+.seperator {
+	border: 0;
+	height: 0;
+	margin: 30px 0 30px 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.15);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
 
 .kd-arrow {
 	position: relative;
