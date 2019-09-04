@@ -8,11 +8,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/xcode.css">
   	<link rel="icon" type="image/png" href="images/favicon.png">
   	<link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
   	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&display=swap" rel="stylesheet">
+  	<script src="js/highlight.pack.js"></script>
 </head>
-<body class="about">
+<body class="blog">
 	<div class="page">
 
 		<!-- HEADER -->
@@ -25,8 +27,8 @@
 						<nav class="kd-nav">
 							<a href="/" title="Home">Home</a>
 							<a href="/work.html" title="Work">Work</a>
-							<a href="/blog.html" title="Notebook">Notebook</a>
-							<a href="/about.html" class="current" title="About">About</a>
+							<a href="/blog.html" class="current" title="Notebook">Notebook</a>
+							<a href="/about.html" title="About">About</a>
 						</nav>
 					</div>
 
@@ -49,32 +51,76 @@
 
 		<header class="kd-page-header">
 			<div class="container">
-				<h1 class="kd-page-title">ABOUT : Lorem gobar dolor sit amet, consectetur adipisicing elit.</h1>
+				<h1>Everything About The Apple Watch</h1>
+				<p>The new sound of home.</p>
 			</div>
 		</header>
 
+		<div class="kd-breadcrumbs">
+			<div class="container">
+				<nav class="kd-nav">
+					<a href="#">Blog</a>
+					<span>&#722;</span>
+					<a href="#">Products</a>
+					<span>&#722;</span>
+					<span href="#">Everything about the apple watch</span>
+				</nav>
+			</div>
+		</div>
+
 		<div class="container">
-			<section class="kd-content kd-about">
-				<div>
-					<h2>Hello there! I’m Kshitij</h2>
-					<p>A digital designer & developer with 10+ years of experience in graphic design and web development. A problem solving design professional motivated by challenging projects and deadlines.</p>
-					<hr class="seperator">
-					<h2>Things I do</h2>
-					<div class="skills">
-						<ul>
-							<li>WordPress / Jekyll</li>
-							<li>Graphic & Web Design</li>
-						</ul>
-						<ul>
-							<li>Brand Identity Design</li>
-							<li>Vector Illustration</li>
-						</ul>
-					</div>
+			<div class="kd-single">
+				<div class="content">
+					<p>Apple has finally revealed all regarding the Apple Watch, the wrist-based wearable it first introduced last September. Many of the Apple Watch’s particulars were already known, but here, for the first time, is a comprehensive look at what will no doubt become the world’s most popular smartwatch.</p>
+					<p>Take a call from the trail. Check in with a buddy over Walkie-Talkie. Keep your workouts going by streaming Apple Music. Or raise your wrist and ask Siri to order your usual. Apple Watch Series 4 with cellular makes it easy to stay connected to the people and information you care about most. Even when you don’t have your phone.</p>
+					<p>Emergency SOS calls for help when you can’t. It dials 911, notifies your emergency contacts, sends your current location, and displays your Medical ID badge on the screen for emergency personnel. And Apple Watch Series 4 with cellular does it all even when you’re away from your phone.</p>
+					<p>Quicker than a call. More personal than a text. The Walkie-Talkie app lets you communicate in a fun way with anyone who has an Apple Watch. Just press to talk. Let go to listen. Roger that?</p>
+					<p class="align-center"><img src="images/blog/6.jpeg" alt="Hahahaha"></p>
+					<p class="caption">Some image caption here about the stupid, useless yet fascinating HomePod</p>
+<pre><code>
+// To run this test, install Sausage (see http://github.com/jlipps/sausage-bun
+// to get the curl one-liner to run in this directory), then run:
+// vendor/bin/phpunit SimpleTest.php
+
+require_once "vendor/autoload.php";
+
+define("APP_PATH", realpath(dirname(__FILE__).'/../../apps/TestApp/build/release-iphonesimulator/TestApp-iphonesimulator.app'));
+
+if (!APP_PATH) {
+
+    die("App did not exist!");
+}
+
+class SimpleTest extends Sauce\Sausage\WebDriverTestCase {
+
+    protected $numValues = array();
+    public static $browsers = array(
+        array(
+            'local' => true,
+            'port' => 4723,
+            'browserName' => '',
+            'desiredCapabilities' => array(
+                'deviceName' => '=iPhone 5s',
+                'version' => '8.4 Simulator',
+                'platformName' => 'iOS',
+                'app' => APP_PATH
+            )
+        )
+    );
+}
+</code></pre>
+					<h3>Not just evolved, transformed.</h3>
+					<p>The largest Apple Watch display yet. Electrical heart sensor. Re-engineered Digital Crown with haptic feedback. Entirely familiar, yet completely redesigned, Apple Watch Series 4 resets the standard for what a watch can be.</p>
+					<p>ECG on your wrist. Notifications for low and high heart rate, and irregular rhythm. Fall detection and Emergency SOS. Breathe watch faces. It’s designed to improve your health every day and powerful enough to help protect it.</p>
+					<h4>The freedom of cellular.</h4>
+					<p>Walkie-Talkie, phone calls, and messages. Stream Apple Music and Apple Podcasts.* More ways to use Siri. Built-in cellular lets you do it all on your watch — even while you’re away from your phone.</p>
+					<a href="#" class="kd-button">Click Here to buy.</a>
 				</div>
-				<div class="kd-portrait align-center">
-					<img class="kd-portrait-image" src="images/kshitij-deota.jpg" alt="Portrait of Kshitij Deota">
+				<div class="attachment">
+					<img src="images/blog/1.jpeg" alt="Picture of Homepod" />
+					<p class="caption">lorem gobar ipsum dolor amet</p>
 				</div>
-			</section>
+			</div>
 		</div>
 
 		<!-- CONTENT ENDS -->
@@ -141,5 +187,6 @@
 		<!-- COLOPHON ENDS -->
 
 	</page><!-- .page -->
+	<script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>

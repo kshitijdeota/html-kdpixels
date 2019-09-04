@@ -10,235 +10,142 @@
 	<link rel="stylesheet" href="css/style.css">
   	<link rel="icon" type="image/png" href="images/favicon.png">
   	<link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
-  	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.1/imagesloaded.pkgd.min.js"></script>
-  	<script src="js/isotope.pkgd.min.js"></script>
-  	<script src="js/script.js"></script>
+  	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="home">
 	<div class="page">
 
 		<!-- HEADER -->
 
-		<div class="kd-sticky kd-branding-wrapper">
+		<header class="kd-sticky kd-header">
 			<div class="container">
-				<header class="kd-branding" role="branding">
-					<div class="kd-logo">
-						<a href="#" title="Home" class="kd-logo-link"><img src="images/kdpixels-color.png" class="kd-logo-image" alt="Site Logo"></a>
-						<nav class="kd-main-nav">
-							<a href="/" class="kd-main-nav-link" title="Home">HOME</a>
-							<a href="#work" class="kd-main-nav-link" title="Work">WORK</a>
-							<a href="/blog-notebook.html" class="kd-main-nav-link" title="Notebook">NOTEBOOK</a>
-							<a href="/about.html" class="kd-main-nav-link" title="About">ABOUT</a>
+				<div id="kd-branding" class="kd-branding" role="branding">
+					<div>
+						<a id="logo" href="#" title="Home"><img src="images/kdpixels-color.png" alt="Site Logo"></a>
+						<nav class="kd-nav">
+							<a href="/" class="current" title="Home">Home</a>
+							<a href="/work.html" title="Work">Work</a>
+							<a href="/blog.html" title="Notebook">Notebook</a>
+							<a href="/about.html" title="About">About</a>
 						</nav>
 					</div>
 
-					<nav class="kd-social-nav">
-						<label class="kd-social-nav-label">CONTACT :</label>
-						<a class="kd-social-nav-link" target="_blank" href="https://www.instagram.com/kshitijdeota/" title="Instagram Profile"><img class="kd-social-nav-image" src="images/social/instagram.png" alt="Instagram"></a>
-						<a class="kd-social-nav-link" target="_blank" href="https://www.behance.net/kshitijdeota" title="Behance Profile"><img class="kd-social-nav-image" src="images/social/behance.png" alt="Behance"></a>
-						<a class="kd-social-nav-link" target="_blank" href="https://twitter.com/kshitijdeota" title="Twitter"><img class="kd-social-nav-image" src="images/social/twitter.png" alt="Twitter"></a>
-						<a class="kd-social-nav-link" target="_blank" href="skype:kkdevta?chat" title="Skype Messenger"><img class="kd-social-nav-image" src="images/social/skype.png" alt="Skype"></a>
-						<a class="kd-social-nav-link" target="_blank" href="https://join.slack.com/t/kdpixels/shared_invite/enQtNzMxOTQxODQ2ODE5LWQ4ZjI4OWZiMWYyMGI5NmUzNmQwZThjOTI1OTE4MzA0ZDNjNDQ0ZWQwNDUyZmNjYjhhNmVlM2U2NmI5MTliMjc" title="Slack"><img class="kd-social-nav-image" src="images/social/slack.png" alt="Slack"></a>
-						<a class="kd-social-nav-link" target="_blank" href="https://github.com/kshitijdeota" title="Github"><img class="kd-social-nav-image" src="images/social/github.png" alt="Github"></a>
-						<a class="kd-social-nav-link" target="_blank" href="mailto:kshitij@kdpixels.com" title="Email"><img class="kd-social-nav-image" src="images/social/email.png" alt="Email"></a>
+					<nav class="kd-nav kd-nav-social">
+						<a target="_blank" href="https://www.instagram.com/kshitijdeota/" title="Instagram Profile"><img class="kd-social-image" src="images/social/instagram.png" alt="Instagram"></a>
+						<a target="_blank" href="https://www.behance.net/kshitijdeota" title="Behance Profile"><img class="kd-social-image" src="images/social/behance.png" alt="Behance"></a>
+						<a target="_blank" href="https://twitter.com/kshitijdeota" title="Twitter"><img class="kd-social-image" src="images/social/twitter.png" alt="Twitter"></a>
+						<a target="_blank" href="skype:kkdevta?chat" title="Skype Messenger"><img class="kd-social-image" src="images/social/skype.png" alt="Skype"></a>
+						<a target="_blank" href="https://join.slack.com/t/kdpixels/shared_invite/enQtNzMxOTQxODQ2ODE5LWQ4ZjI4OWZiMWYyMGI5NmUzNmQwZThjOTI1OTE4MzA0ZDNjNDQ0ZWQwNDUyZmNjYjhhNmVlM2U2NmI5MTliMjc" title="Slack"><img class="kd-social-image" src="images/social/slack.png" alt="Slack"></a>
+						<a target="_blank" href="https://github.com/kshitijdeota" title="Github"><img class="kd-social-image" src="images/social/github.png" alt="Github"></a>
+						<a target="_blank" href="mailto:kshitij@kdpixels.com" title="Email"><img class="kd-social-image" src="images/social/email.png" alt="Email"></a>
 					</nav>
-				</header>
+				</div>
 			</div>
-		</div>
+		</header>
 
 		<!-- HEADER ENDS -->
 
-		<!-- CONTENT -->
+		<!-- HERO -->
 
 		<div class="kd-hero-wrapper">
 			<div class="container">
 				<div class="kd-hero">
-					<div class="kd-upsell kd-intro">
-						<h2 class="kd-upsell-title">HELLO, I AM KD</h2>
-						<p class="kd-upsell-content">
+					<div>
+						<h2>HELLO, I AM KD</h2>
+						<p>
 							A Digital Designer and Illustrator<br />
 							Who likes to design &amp; code stuff.<br />
 							&nbsp;
 						</p>
-						<a href="#" class="kd-upsell-link">SEE MY PORTFOLIO</a>
+						<a class="kd-button" href="#">SEE MY PORTFOLIO</a>
 					</div>
 
-					<div class="kd-upsell kd-primary">
-						<h2 class="kd-upsell-title">THEMES & TEMPLATES</h2>
-						<p class="kd-upsell-content">
+					<div>
+						<h2>THEMES & TEMPLATES</h2>
+						<p>
 							Ready To Go & Made to Perform<br />
 							For Start-ups, Small Businesses<br />
 							& Professional Bloggers
 						</p>
-						<a href="#" class="kd-upsell-link">GET A THEME</a>
+						<a class="kd-button" href="#">GET A THEME</a>
 					</div>
 
-					<div class="kd-upsell kd-more">
-						<h2 class="kd-upsell-title">DESIGN ASSETS &amp; MORE</h2>
-						<p class="kd-upsell-content">
-							Graphic design assets, Vector illustrations,</br>
-							icon sets, patterns and textures<br />
+					<div>
+						<h2>DESIGN ASSETS &amp; MORE</h2>
+						<p>
+							Graphic design assets, Vector<br /> illustrations,
+							icon sets, patterns and textures
 							for your creative projects.
 						</p>
-						<a href="#" class="kd-upsell-link">BROWSE DESIGN ASSETS</a>
+						<a class="kd-button" href="#">BROWSE DESIGN ASSETS</a>
 					</div>
 				</div><!-- .kd-hero -->
 			</div>
 		</div><!-- .kd-hero-wrapper -->
 
+		<!-- HERO ENDS -->
 
+		<!-- FOOTER -->
 
-		<section class="kd-content" id="work">
-			<div class="kd-portfolio-nav">
-				<div class="container">
-					<nav>
-						<a class="kd-portfolio-nav-link" href="#brand-identity">Brand Identity</a>
-						<a class="kd-portfolio-nav-link" href="#graphic-design">Graphic Design</a>
-						<a class="kd-portfolio-nav-link" href="#web-design">Web Design</a>
-						<a class="kd-portfolio-nav-link" href="#wordpress">WordPress</a>
-						<a class="kd-portfolio-nav-link" href="#jekyll">Jekyll</a>
-					</nav>
-				</div>
-			</div>
-
-			<div class="kd-portfolio">
-				<div class="container">
-
-					<div class="kd-portfolio-items">
-						<div class="kd-portfolio-item">
-							<img class="kd-portfolio-image" src="images/work/moon-explorer.jpg" alt="Creamsmith">
-						</div>
-
-						<div class="kd-portfolio-item">
-							<div class="kd-portfolio-content">
-								<h3 class="kd-portfolio-item-title kd-android" id="moon-explorer">Moon Explorer</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, error dolorum necessitatibus libero iusto quia pariatur vitae maiores dolorem tempora ducimus itaque maxime asperiores neque optio reiciendis natus obcaecati? Dolor. Tempora laborum placeat officia vitae esse deserunt dolores recusandae ipsam odio expedita! Odio vel eius quaerat quibusdam accusantium ipsum sit, maiores delectus!</p>
-								<a class="kd-button" href="#">READ MORE</a> | <a class="kd-button" href="#">DOWNLOAD</a>
-							</div>
-						</div>
-					</div>
-
-
-					<div class="kd-portfolio-items">
-						<div class="kd-portfolio-item">
-							<div class="kd-portfolio-content">
-								<h3 class="kd-portfolio-item-title kd-android">Monoic Icon Pack</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae similique ex, totam dignissimos ducimus quibusdam itaque necessitatibus excepturi dolorem, molestias voluptatem voluptatum fugit! Eos animi minima laudantium, reprehenderit nam alias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo labore saepe soluta dolores asperiores obcaecati nihil ab? Iure pariatur, tenetur facilis at distinctio impedit. Repudiandae hic eligendi, vero fugit asperiores.</p>
-								<a class="kd-button" href="#">DOWNLOAD</a>
-							</div>
-						</div>
-
-						<div class="kd-portfolio-item">
-							<img class="kd-portfolio-image" src="images/work/monoic-icon-pack.jpg" alt="10 Pounder">
-						</div>
-					</div>
-
-
-					<div class="kd-portfolio-items">
-						<div class="kd-portfolio-item">
-							<img class="kd-portfolio-image" src="images/work/webdesign.jpg" alt="Creamsmith">
-						</div>
-
-						<div class="kd-portfolio-item">
-							<div class="kd-portfolio-content">
-								<h3 class="kd-portfolio-item-title kd-safari" id="web-design">Web Design</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, consequatur possimus aliquam excepturi? Eius velit ipsum, adipisci perferendis neque facere blanditiis nulla, nam quidem magnam, laudantium! Debitis accusantium, et inventore!</p>
-								<a href="#" class="kd-button kd-arrow">SEE WORK</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="kd-portfolio-items">
-						<div class="kd-portfolio-item">
-							<div class="kd-portfolio-content">
-								<h3 class="kd-portfolio-item-title kd-wordpress" id="wordpress">WordPress</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A suscipit ex libero delectus velit quod iste ab, modi eum, quas nemo quaerat rem ad, maiores assumenda minima, placeat. Eius, harum.</p>
-								<a href="#" class="kd-button kd-arrow">SEE WORDPRESS THEMES</a>
-							</div>
-						</div>
-
-						<div class="kd-portfolio-item">
-							<img class="kd-portfolio-image" src="images/work/wordpress.jpg" alt="Creamsmith">
-						</div>
-					</div>
-
-
-					<div class="kd-portfolio-items">
-						<div class="kd-portfolio-item">
-							<img class="kd-portfolio-image" src="images/work/jekyll.jpg" alt="Monoic Icon Pack">
-						</div>
-
-						<div class="kd-portfolio-item">
-							<div class="kd-portfolio-content">
-								<div class="kd-portfolio-content">
-									<h3 class="kd-portfolio-item-title kd-jekyll" id="jekyll">Jekyll</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut repudiandae quos quasi reprehenderit nihil facilis repellendus qui explicabo unde, id aperiam veritatis cupiditate, vero illo laborum alias minus. Eum, inventore!</p>
-									<a href="#" class="kd-button kd-arrow">SEE JEKYLL THEMES</a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</div> <!-- .kd-portfolio-->
-
-		</section><!-- .kd-content -->
-
-		<!-- CONTENT ENDS -->
-
-		<footer class="kd-footer">
+		<div class="kd-footer-wrapper">
 			<div class="container">
-				<div class="kd-footer-column-wrapper">
-					<div class="kd-footer-column">
-						<h3 class="kd-footer-title">KD PIXELS</h3>
-						<nav class="kd-footer-nav">
-							<a class="kd-footer-nav-link" href="about.html">About</a>
-							<a class="kd-footer-nav-link" href="blog-notebook.html">Notebook</a>
-							<a class="kd-footer-nav-link" href="faq.html">F.A.Q.</a>
-							<a class="kd-footer-nav-link" href="contact.html">Contact</a>
+				<footer class="kd-footer">
+					<div>
+						<h3>KD Pixels</h3>
+						<nav>
+							<a href="about.html">About</a>
+							<a href="blog-notebook.html">Notebook</a>
+							<a href="faq.html">F.A.Q.</a>
+							<a href="contact.html">Contact</a>
 						</nav>
 					</div>
 
-					<div class="kd-footer-column">
-						<h3 class="kd-footer-title">DISCOVER</h3>
-						<nav class="kd-footer-nav">
-							<a class="kd-footer-nav-link" href="#">WordPress</a>
-							<a class="kd-footer-nav-link" href="#">Brand Identity</a>
-							<a class="kd-footer-nav-link" href="#">Illustrations</a>
-							<a class="kd-footer-nav-link" href="#">3D Renderings</a>
+					<div>
+						<h3>Discover</h3>
+						<nav>
+							<a href="#">WordPress</a>
+							<a href="#">Brand Identity</a>
+							<a href="#">Illustrations</a>
+							<a href="#">3D Renderings</a>
 						</nav>
 					</div>
 
-					<div class="kd-footer-column">
-						<h3 class="kd-footer-title">POLICIES</h3>
-						<nav class="kd-footer-nav">
-							<a class="kd-footer-nav-link" href="#">Licence Agreement</a>
-							<a class="kd-footer-nav-link" href="#">Payments &amp; Returnsz</a>
-							<a class="kd-footer-nav-link" href="#">Privacy Policy</a>
+					<div>
+						<h3>Policies</h3>
+						<nav>
+							<a href="#">Licence Agreement</a>
+							<a href="#">Payments &amp; Returns</a>
+							<a href="#">Privacy Policy</a>
 						</nav>
 					</div>
-				</div>
+				</footer>
 			</div>
-		</footer>
+		</div>
+
+		<!-- FOOTER ENDS -->
+
+		<!-- COLOPHON -->
 
 		<div class="kd-colophon-wrapper">
 			<div class="container">
 				<div class="kd-colophon">
-					<p class="kd-colophon-copyright">Copyright &copy; 2019 KD Pixels.</p>
+					<p>Copyright &copy; 2019 KD Pixels.</p>
 
-					<nav class="kd-social-nav">
-						<a class="kd-social-nav-link" target="_blank" href="https://www.instagram.com/kshitijdeota/" title="Instagram Profile"><img class="kd-social-nav-image" src="images/social/instagram.png" alt="Instagram"></a>
-						<a class="kd-social-nav-link" target="_blank" href="https://www.behance.net/kshitijdeota" title="Behance Profile"><img class="kd-social-nav-image" src="images/social/behance.png" alt="Behance"></a>
-						<a class="kd-social-nav-link" target="_blank" href="https://twitter.com/kshitijdeota" title="Twitter"><img class="kd-social-nav-image" src="images/social/twitter.png" alt="Twitter"></a>
-						<a class="kd-social-nav-link" target="_blank" href="skype:kkdevta?chat" title="Skype Messenger"><img class="kd-social-nav-image" src="images/social/skype.png" alt="Skype"></a>
-						<a class="kd-social-nav-link" target="_blank" href="https://join.slack.com/t/kdpixels/shared_invite/enQtNzMxOTQxODQ2ODE5LWQ4ZjI4OWZiMWYyMGI5NmUzNmQwZThjOTI1OTE4MzA0ZDNjNDQ0ZWQwNDUyZmNjYjhhNmVlM2U2NmI5MTliMjc" title="Slack"><img class="kd-social-nav-image" src="images/social/slack.png" alt="Slack"></a>
-						<a class="kd-social-nav-link" target="_blank" href="https://github.com/kshitijdeota" title="Github"><img class="kd-social-nav-image" src="images/social/github.png" alt="Github"></a>
-						<a class="kd-social-nav-link" target="_blank" href="mailto:kshitij@kdpixels.com" title="Email"><img class="kd-social-nav-image" src="images/social/email.png" alt="Email"></a>
+					<nav class="kd-nav-social kd-nav">
+						<a target="_blank" href="https://www.instagram.com/kshitijdeota/" title="Instagram Profile"><img class="kd-social-image" src="images/social/instagram.png" alt="Instagram"></a>
+						<a target="_blank" href="https://www.behance.net/kshitijdeota" title="Behance Profile"><img class="kd-social-image" src="images/social/behance.png" alt="Behance"></a>
+						<a target="_blank" href="https://twitter.com/kshitijdeota" title="Twitter"><img class="kd-social-image" src="images/social/twitter.png" alt="Twitter"></a>
+						<a target="_blank" href="skype:kkdevta?chat" title="Skype Messenger"><img class="kd-social-image" src="images/social/skype.png" alt="Skype"></a>
+						<a target="_blank" href="https://join.slack.com/t/kdpixels/shared_invite/enQtNzMxOTQxODQ2ODE5LWQ4ZjI4OWZiMWYyMGI5NmUzNmQwZThjOTI1OTE4MzA0ZDNjNDQ0ZWQwNDUyZmNjYjhhNmVlM2U2NmI5MTliMjc" title="Slack"><img class="kd-social-image" src="images/social/slack.png" alt="Slack"></a>
+						<a target="_blank" href="https://github.com/kshitijdeota" title="Github"><img class="kd-social-image" src="images/social/github.png" alt="Github"></a>
+						<a target="_blank" href="mailto:kshitij@kdpixels.com" title="Email"><img class="kd-social-image" src="images/social/email.png" alt="Email"></a>
 					</nav>
 				</div>
 			</div>
 		</div>
+
+		<!-- COLOPHON ENDS -->
+
 	</page><!-- .page -->
 </body>
 </html>
